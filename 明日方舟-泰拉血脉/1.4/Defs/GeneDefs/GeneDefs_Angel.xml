@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef ParentName="GeneHeadboneBase" Name="Ark_AngelHaloBase" Abstract="True">
+		<description>Carriers of this gene will generate a disembodied floating halo above their head, which can enhance the carrier's psychic sensitivity.</description>
+		<prerequisite>Ark_Sectator</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Ark_Angel</displayCategory>
+		<ignoreDarkness>true</ignoreDarkness>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>sacred</symbol>
+				</li>
+				<li>
+					<symbol>bright</symbol>
+				</li>
+				<li>
+					<symbol>dazzling</symbol>
+				</li>
+				<li>
+					<symbol>decorative</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Ark_hediff_Halo</hediff>
+						<bodyparts>
+							<li>Head</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Ark_WingBase" Name="Ark_AngelWingBase" Abstract="True">
+		<description>The carrier of this gene will generate disembodied light wings on his back. The light wings do not have the function of flying but can effectively improve the carrier's maneuverability.</description>
+		<prerequisite>Ark_Sectator</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Ark_Angel</displayCategory>
+		<statOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+			<MeleeDodgeChance>5</MeleeDodgeChance>
+		</statOffsets>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>sacred</symbol>
+				</li>
+				<li>
+					<symbol>bright</symbol>
+				</li>
+				<li>
+					<symbol>dazzling</symbol>
+				</li>
+				<li>
+					<symbol>decorative</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef ParentName="Ark_AngelWingBase">
+		<defName>Ark_LightWings1</defName>
+		<label>Overloaded Light Wings</label>
+		<iconPath>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_Wings1_south</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_Wings1</graphicPath>
+			<drawScale>1.8</drawScale>
+			<drawOffsetNorth>(0, 0.19, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0, 0)</drawOffsetEast>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="Ark_AngelWingBase">
+		<defName>Ark_LightWings2</defName>
+		<label>Bloody Light Wings</label>
+		<iconPath>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_Wings2_south</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_Wings2</graphicPath>
+			<drawScale>1.8</drawScale>
+			<drawOffsetNorth>(0, 0.19, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0, 0)</drawOffsetEast>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="Ark_AngelWingBase">
+		<defName>Ark_LightWings3</defName>
+		<label>Sky Blue Light Wings</label>
+		<iconPath>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_Wings3_south</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_Wings3</graphicPath>
+			<drawScale>1.8</drawScale>
+			<drawOffsetNorth>(0, 0.19, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0, 0)</drawOffsetEast>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="Ark_AngelWingBase">
+		<defName>Ark_LightWings4</defName>
+		<label>Magic Blue Light Wings</label>
+		<iconPath>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_Wings4_south</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_Wings4</graphicPath>
+			<drawScale>1.8</drawScale>
+			<drawOffsetNorth>(0, 0.19, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0, 0)</drawOffsetEast>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="Ark_AngelWingBase">
+		<defName>Ark_LightWings5</defName>
+		<label>Holy Light Wings</label>
+		<iconPath>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_Wings5_south</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_Wings5</graphicPath>
+			<drawScale>1.8</drawScale>
+			<drawOffsetNorth>(0, 0.19, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0, 0)</drawOffsetEast>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Ark_AngelHaloBase">
+		<defName>Ark_Halo1</defName>
+		<label>Light Pink Halo</label>
+		<iconPath>Things/Pawn/Humanlike/HeadAttachments/Ark_Halo/Ark_Halo1_south</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_Halo/Ark_Halo1</graphicPath>
+			<layer>PostHeadgear</layer>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="Ark_AngelHaloBase">
+		<defName>Ark_Halo2</defName>
+		<label>Deep Blue Halo</label>
+		<iconPath>Things/Pawn/Humanlike/HeadAttachments/Ark_Halo/Ark_Halo2_south</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_Halo/Ark_Halo2</graphicPath>
+			<layer>PostHeadgear</layer>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="Ark_AngelHaloBase">
+		<defName>Ark_Halo3</defName>
+		<label>Platinum Halo</label>
+		<iconPath>Things/Pawn/Humanlike/HeadAttachments/Ark_Halo/Ark_Halo3_south</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_Halo/Ark_Halo3</graphicPath>
+			<layer>PostHeadgear</layer>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="Ark_AngelHaloBase">
+		<defName>Ark_Halo4</defName>
+		<label>Bright Blue Halo</label>
+		<iconPath>Things/Pawn/Humanlike/HeadAttachments/Ark_Halo/Ark_Halo4_south</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_Halo/Ark_Halo4</graphicPath>
+			<layer>PostHeadgear</layer>
+		</graphicData>
+	</GeneDef>
+	
+	<GeneDef ParentName="Ark_AngelHaloBase">
+		<defName>Ark_Halo5</defName>
+		<label>Golden Halo</label>
+		<iconPath>Things/Pawn/Humanlike/HeadAttachments/Ark_Halo/Ark_Halo5_south</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_Halo/Ark_Halo5</graphicPath>
+			<layer>PostHeadgear</layer>
+		</graphicData>
+	</GeneDef>
+</Defs>

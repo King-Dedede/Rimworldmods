@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef>
+    <defName>FireAtWill</defName>
+    <label>Fire at Will</label>
+    <description>Carriers of this gene will have a mysterious confidence in their shooting skills. Pulling the trigger makes them feel happy. As for whether they can hit or not, let God decide.</description>
+    <iconPath>UI/Icons/Genes/FireAtWill</iconPath>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <displayCategory>Ark_Fight</displayCategory>
+    <forcedTraits>
+      <li>
+        <def>ShootingAccuracy</def>
+        <degree>-1</degree>
+      </li>
+    </forcedTraits>
+    <modExtensions>
+         <li Class="VanillaGenesExpanded.GeneExtension">
+           <backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+           <backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+         </li>
+    </modExtensions>
+  </GeneDef>
+
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>ShootingFingers</defName>
+		<label>Gun Master</label>
+		<description>Carriers of this gene have extremely flexible fingers and an innate talent for firearms. As long as they touch a gun, they can quickly understand its performance and adjust it to the state that best suits them.</description>
+		<iconPath>UI/Icons/Genes/ShootingFingers</iconPath>
+		<prerequisite>Ark_Sectator</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Ark_Fight</displayCategory>
+		<statOffsets>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
+			<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+		</statOffsets>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+<!--	<GeneDef>
+		<defName>Ark_gene_FireRoad</defName>
+		<label>Road of Fire</label>
+		<description>aaa</description>
+		<iconPath>UI/Icons/Genes/Ark_FireRoad</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Ark_Fight</displayCategory>
+		<abilities>
+			<li>Ark_FireRoad</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Ark_FireRoad</AbilityDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_gene_FireCurse</defName>
+		<label>Burning Blood Curse</label>
+		<description>aaa</description>
+		<iconPath>UI/Icons/Genes/Ark_FireCurse</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Ark_Fight</displayCategory>
+		<abilities>
+			<li>Ark_FireCurse</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Ark_FireCurse</AbilityDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>-->
+
+	<GeneDef Name="Ark_GenderBase" Abstract="True">
+		<displayCategory>Ark_Misc</displayCategory>
+		<exclusionTags>
+			<li>Gender</li>
+		</exclusionTags>
+		<randomChosen>true</randomChosen>
+	</GeneDef>
+
+	<GeneDef ParentName="Ark_GenderBase">
+		<defName>Ark_GAIA</defName>
+		<label>Body of Gaia</label>
+		<description>Dominant expression of this gene will make the carriers biologically female, and their physical strength will exceed that of ordinary people, which often gives them a significant advantage in close combat.</description>
+		<iconPath>UI/Icons/Genes/Ark_GAIA</iconPath>
+		<prerequisite>Ark_Vouivre</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<displayCategory>Ark_Fight</displayCategory>
+		<forcedTraits>
+			<li>
+				<def>Tough</def>
+			</li>
+		</forcedTraits>
+		<statFactors>
+			<MeleeDamageFactor>1.5</MeleeDamageFactor>
+		</statFactors>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<forceFemale>true</forceFemale>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

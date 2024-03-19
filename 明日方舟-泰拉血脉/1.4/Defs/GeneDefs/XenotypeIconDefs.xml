@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeIconDef>
+		<defName>Ark_SectatorIcon</defName>
+		<texPath>UI/Icons/Xenotypes/Ark_xeno_Sectator</texPath>
+	</XenotypeIconDef>
+	<XenotypeIconDef>
+		<defName>Ark_VouivreIcon</defName>
+		<texPath>UI/Icons/Xenotypes/Ark_xeno_Vouivre</texPath>
+	</XenotypeIconDef>
+	<XenotypeIconDef>
+		<defName>Ark_OniIcon</defName>
+		<texPath>UI/Icons/Xenotypes/Ark_xeno_Oni</texPath>
+	</XenotypeIconDef>
+	<XenotypeIconDef>
+		<defName>Ark_FelineIcon</defName>
+		<texPath>UI/Icons/Xenotypes/Ark_xeno_Feline</texPath>
+	</XenotypeIconDef>
+	<XenotypeIconDef>
+		<defName>Ark_CautusIcon</defName>
+		<texPath>UI/Icons/Xenotypes/Ark_xeno_Cautus</texPath>
+	</XenotypeIconDef>
+	<XenotypeIconDef>
+		<defName>Ark_VulpoIcon</defName>
+		<texPath>UI/Icons/Xenotypes/Ark_xeno_Vulpo</texPath>
+	</XenotypeIconDef>
+	<XenotypeIconDef>
+		<defName>Ark_ZalakIcon</defName>
+		<texPath>UI/Icons/Xenotypes/Ark_xeno_Zalak</texPath>
+	</XenotypeIconDef>
+</Defs>

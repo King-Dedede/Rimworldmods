@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Ark_HigashiKatana</defName>
+		<label>Higashi Katana</label>
+		<description>A single-edged sword with a large curvature, forged using techniques from the oni tribe. The sharpness of the blade is far beyond that of ordinary knives. If used by a master, it can easily cut through thick armor.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/WeaponMelee/Ark_HigashiKatana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2, 1.2)</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<soundInteract>Interact_MonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+		<techLevel>Medieval</techLevel>
+		<relicChance>3</relicChance>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>Blade back</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+			<li>
+				<label>刀刃</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>1</cooldownTime>
+				<armorPenetration>0.8</armorPenetration>
+			</li>
+		</tools>
+		<costList>
+			<Steel>200</Steel>
+			<Plasteel>50</Plasteel>
+			<Gold>5</Gold>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Ark_Oni</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker>
+		<weaponTags>
+			<li>Ark_OniSword</li>
+		</weaponTags>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+	</ThingDef>
+</Defs>

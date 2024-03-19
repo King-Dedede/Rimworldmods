@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>Ark_Sectator</defName>
+		<label>heart of Sankta</label>
+		<description>The embodiment of the Sankta bloodline. Under the protection of the law, Sankta are united as one.</description>
+		<iconPath>UI/Icons/Genes/Ark_Sectator</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Ark_Souls</displayCategory>
+		<missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathXenogenes>
+				<hediffToWholeBody>Ark_hediff_Sectator</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_Vouivre</defName>
+		<label>Heart of Vouivre</label>
+		<description>The embodiment of a Vouivre's bloodline, strong body and tenacious will, a Vouivre is like an immovable fortress of the earth.</description>
+		<iconPath>UI/Icons/Genes/Ark_Vouivre</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<displayCategory>Ark_Souls</displayCategory>
+		<hediffGiversCannotGive>
+			<li>Carcinoma</li>
+			<li>HeartAttack</li>
+			<li>BadBack</li>
+			<li>Frail</li>
+			<li>Cataract</li>
+			<li>Dementia</li>
+			<li>Alzheimers</li>
+			<li>Asthma</li>
+			<li>HeartArteryBlockage</li>
+		</hediffGiversCannotGive>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathXenogenes>
+				<hediffToWholeBody>Ark_hediff_Vouivre</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_Oni</defName>
+		<label>Oni's Heart</label>
+		<description>The embodiment of the Oni bloodline and manic nature that makes Oni the embodiment of fear and violence, but the Oni should have more choices.</description>
+		<iconPath>UI/Icons/Genes/Ark_Oni</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Ark_Souls</displayCategory>
+		<abilities>
+			<li>Ark_OniBerserk</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Ark_OniBerserk</AbilityDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathXenogenes>
+				<hediffToWholeBody>Ark_hediff_Oni</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+<!--	<EffecterDef>
+		<defName>Berser</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+				<scale>0.5</scale>
+				<chancePerTick>0.02</chancePerTick>
+				<positionRadius>0.3</positionRadius>
+				<moteDef>Mote_BerserkBi</moteDef>
+				<speed>0.18~0.18</speed>
+				<angle>45</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_BerserkBi</defName>
+		<graphicData>
+			<texPath>Things/Mote/aaa</texPath>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<fadeInTime>0.50</fadeInTime>
+			<solidTime>1</solidTime>
+			<fadeOutTime>1</fadeOutTime>
+			<attachedDrawOffset>(0, 0, 0)</attachedDrawOffset>
+		</mote>
+	</ThingDef>-->
+</Defs>

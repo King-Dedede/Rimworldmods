@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MakeableDrugBase" Name="Ark_OniDrugBase" Abstract="True">
+		<rotatable>false</rotatable>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>40</MarketValue>
+			<Mass>0.1</Mass>
+			<FoodPoisonChanceFixedHuman>0.5</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<drugCategory>Hard</drugCategory>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Take{0}</ingestCommandString>
+			<ingestReportString>Taking{0}。</ingestReportString>
+			<useEatingSpeedStat>true</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>Ark_OniDrug</researchPrerequisite>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+		<costList>
+			<Wastepack>1</Wastepack>
+			<HemogenPack>1</HemogenPack>
+			<MedicineHerbal>2</MedicineHerbal>
+			<PsychoidLeaves>8</PsychoidLeaves>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>210</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_OniDrugBase">
+		<defName>Ark_OniDrug_Fire</defName>
+		<label>Oni Fire Serum</label>
+		<description>It is said that the secret drugs of the Oni clan contain the true essence of fire. Ingestion of it can accelerate the body's metabolism and the dissipation of heat. The technique of controlling the released heat and burning sweat is called "burning the body" by the Oni clan.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_hediff_OniFire</HediffDef>
+			<HediffDef>Ark_hediff_FireHand</HediffDef>
+			<HediffDef>Ark_BloodDrugPoisOning</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Ark_OniDrug_Fire</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Ark_hediff_OniFire</hediffDef>
+					<severity>0.4</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_OniDrugBase">
+		<defName>Ark_OniDrug_Toxic</defName>
+		<label>Oni Poison Serum</label>
+		<description>It is said that the secret drugs of the Oni clan contain the true essence of poison. Ingestion of it can numb pain and slow bleeding. However, the corrosion of the toxin will make distort one's appearance and may leave permanent limb damage. The Oni clan calls this state the "rotting body".</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_hediff_OniToxic</HediffDef>
+			<HediffDef>Ark_hediff_ToxicHand</HediffDef>
+			<HediffDef>Ark_BloodDrugPoisOning</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Ark_OniDrug_Toxic</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Ark_hediff_OniToxic</hediffDef>
+					<severity>0.4</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_OniDrugBase">
+		<defName>Ark_OniDrug_Stone</defName>
+		<label>Oni Earth Serum</label>
+		<description>It is said that the secret drugs of the Oni clan contain the true essence of earth. After ingestion, the body will start to grow special biomass crystals. The accumulation of large amounts of crystals on the body surface can significantly improve the body's strength but hinder movement. The Oni clan calls this state "moving rocks".</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_hediff_OniStone</HediffDef>
+			<HediffDef>Ark_hediff_StoneBody</HediffDef>
+			<HediffDef>Ark_BloodDrugPoisOning</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Ark_OniDrug_Stone</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Ark_hediff_OniStone</hediffDef>
+					<severity>0.4</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_OniDrugBase">
+		<defName>Ark_OniDrug_Wind</defName>
+		<label>Oni Wind Serum</label>
+		<description>It is said that the secret medicine of the Oni clan contains the true essence of wind. Ingestion of it can stimulate the nerves, significantly improve reflexes, and even enter a state of mental focus, allowing one to move freely in a way that is difficult for others. The high versatility and near-zero side effects of the Oni Wind Serum have allowed the status of its user to rise rapidly, successfully mastering it's use for thier gain.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_hediff_OniWind</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Ark_OniDrug_Wind</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Ark_hediff_OniWind</hediffDef>
+					<severity>0.4</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+</Defs>

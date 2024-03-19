@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>RestrainHead</defName>
+    <workerClass>Ark_GSWT.ThoughtWorker_RestrainHead</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredGenes>
+      <li>HeadRestrain</li>
+    </requiredGenes>
+    <stages>
+      <li>
+        <label>Head Covered</label>
+        <description>My head is so dizzy, it feels like I've been in a washing machine for three days!</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+	<ThoughtDef Abstract="True" Name="BaseSympathy">
+		<durationDays>0.25</durationDays>
+		<stackLimit>1</stackLimit>
+		<showBubble>true</showBubble>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	
+	<ThoughtDef ParentName="BaseSympathy">
+		<defName>Ark_HappySympathy</defName>
+		<icon>UI/Icons/Bubble/Ark_HappySympathy</icon>
+		<requiredGenes>
+			<li>Ark_Sectator</li>
+		</requiredGenes>
+		<stages>
+			<li>
+				<label>Happy compatriots</label>
+				<description>I feel the joy of my fellow man, we are one.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef ParentName="BaseSympathy">
+		<defName>Ark_SadSympathy</defName>
+		<icon>UI/Icons/Bubble/Ark_SadSympathy</icon>
+		<requiredGenes>
+			<li>Ark_Sectator</li>
+		</requiredGenes>
+		<stages>
+			<li>
+				<label>Sad compatriots</label>
+				<description>The pain of my fellow citizens heavily echoes in my mind.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Ark_Nature_BodyPart</defName>
+		<workerClass>ThoughtWorker_HasAddedBodyPart</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<requiredTraits>
+			<li>Ark_Trait_Nature</li>
+		</requiredTraits>
+		<stages>
+			<li>
+				<label>Natural body</label>
+				<description>These unnatural creations are incompatible with my flesh and blood and tear at my soul.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+			<li>
+				<label>Natural body（+2）</label>
+				<description>There are more unnatural things that make me unfamiliar with my body.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+			<li>
+				<label>Natural Body（+3）</label>
+				<description>A third artifical part... Maybe I could try to adapt to these artifacts?</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>Natural body（+4）</label>
+				<description>They are just a kind of tool. I should be able to use them well.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+			<li>
+				<label>Natural body（+5）</label>
+				<description>Artifacts can also hold souls, and my body is living in harmony with them.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>Natural body（max）</label>
+				<description>I am a super robot!</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>
