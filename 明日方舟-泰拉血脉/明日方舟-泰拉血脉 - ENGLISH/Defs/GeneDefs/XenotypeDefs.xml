@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeDef>
+		<defName>Ark_xeno_Sectator</defName>
+		<label>Sankta</label>
+		<description>Sankta are a special kind of human being whose bodies are linked to a mysterious supercomputer named "The Law". Most Sankta worship it as a God as it is the reason behind thier supernatural abilites. They have been granted a sixth sense to empathize with thier fellow Sankta telepathically, making them work well together, and they are generally very talented in the use of ranged weapons. "Angels" haunt the memories and dreams of those who dare to cross the Sanka.</description>
+		<descriptionShort>Sankta have an angel-like appearance, but they are better at clearing away enemies with bullets than comforting their companions.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Sectator</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>FireAtWill</li>
+			<li>ShootingFingers</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Mood_Sanguine</li>
+			<li>Aggression_DeadCalm</li>
+			<li>Sleepy</li>
+			<li>Beauty_Pretty</li>
+			<li>Ark_Sectator</li>
+			<li>Ark_Halo</li>
+			<li>Ark_LightWings</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>HeadRestrain</li>
+			<li>Instability_Mild</li>
+			<li>AptitudeRemarkable_Shooting</li>
+			<li>AptitudePoor_Melee</li>
+			<li>AptitudeStrong_Construction</li>
+			<li>AptitudeStrong_Cooking</li>
+			<li>AptitudeTerrible_Plants</li>
+			<li>AptitudeTerrible_Animals</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_SuperSectator</defName>
+		<label>Apostolic Sankta</label>
+		<description>The Apostolic Knights are one of the deepest secrets of New Laterano, and they sacrifice themselves in the line of duty to ensure the Sanktas' paradise. How many bones must be piled up to rebuild a holy city? How much blood must be shed to reach paradise? Only one certain individual knows.</description>
+		<descriptionShort>The Apostolic Knights are the shields of the law, and their revolving firearms will judge all those who blaspheme it.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_SuperSectator</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Ark_Sectator</li>
+			<li>FireAtWill</li>
+			<li>Superclotting</li>
+			<li>MoveSpeed_Slow</li>
+			<li>ToxicEnvironmentResistance_Total</li>
+			<li>FireResistant</li>
+			<li>Aggression_DeadCalm</li>
+			<li>Sleepy</li>
+			<li>Robust</li>
+			<li>Pain_Reduced</li>
+			<li>Sterile</li>
+			<li>Hair_LongOnly</li>
+			<li>Ark_BigLightWings</li>
+			<li>Ark_TraditionHalo</li>
+			<li>Body_Hulk</li>
+			<li>Skin_SheerWhite</li>
+			<li>HeadRestrain</li>
+			<li>ShootingFingers</li>
+			<li>Instability_Major</li>
+			<li>Unstoppable</li>
+			<li>AptitudeRemarkable_Shooting</li>
+			<li>AptitudeTerrible_Plants</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>ChemicalDependency_Psychite</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_Vouivre</defName>
+		<label>Vouivre</label>
+		<description>Vouivre are a special race with a strong physique, two horns sprouting from thier head and a thick tail. Most of them have straightforward personalities and are good at surviving in the wild. They can live well even in the wilderness unarmed, but they struggle a bit with high-tech creations. Due to the influence of certain physiological factors, Vouivre women are generally stronger than men, which results in women often taking the dominant position in traditional Vouivre families.</description>
+		<descriptionShort>Vouivre are practicallly invincible on the battlefield with thier extraordinary physiques, and can also lend a hand with farming, but never let them try to repair things.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Vouivre</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Ark_GAIA</li>
+			<li>Immunity_SuperStrong</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Ark_Vouivre</li>
+			<li>Ark_VouivreHorn3</li>
+			<li>Ark_VouivreHorn1</li>
+			<li>Ark_VouivreHorn2</li>
+			<li>Ark_VouivreTail3</li>
+			<li>Ark_VouivreTail1</li>
+			<li>Ark_VouivreTail2</li>
+			<li>Outspoken</li>
+			<li>Ark_Male</li>
+			<li>Ark_Nature</li>
+			<li>Ark_gene_TragedyBirth</li>
+			<li>Nearsighted</li>
+			<li>Unstoppable</li>
+			<li>AptitudeStrong_Plants</li>
+			<li>AptitudeStrong_Animals</li>
+			<li>AptitudePoor_Social</li>
+			<li>AptitudePoor_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_Oni</defName>
+		<label>Oni</label>
+		<description>Oni are a special kind of human being with horns on their heads. They are very good at fighting and have extremely tough spirits. Fear will not leave traces in their minds, and pain will not knock them down. The physique of an Oni is also quite strange. They can withstand alcohol and toxins very well, but will feel uncomfortable due to sunlight exposure. During battle, Oni can gain an advantage in combat by fulfilling their killing instinct, but this instinct also affects their fighting style, leading them to getting injured easily.</description>
+		<descriptionShort>Oni are trustworthy warriors, but it's best to keep an eye on them when fighting, otherwise you'll have to find someone to carry them back.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Oni</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Immunity_SuperStrong</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>Superclotting</li>
+			<li>UVSensitivity_Mild</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Ark_Oni</li>
+			<li>Ark_OniHorn1</li>
+			<li>Ark_OniHorn3</li>
+			<li>Ark_OniHornFloating2</li>
+			<li>Ark_OniHornFloating</li>
+			<li>Ark_OniHorn2</li>
+			<li>Ark_InhibitingToxic</li>
+			<li>Ark_Aggressor</li>
+			<li>Ark_Careless</li>
+			<li>Ark_gene_TragedyBirth</li>
+			<li>StrongStomach</li>
+			<li>DarkVision</li>
+			<li>Instability_Mild</li>
+			<li>AptitudePoor_Shooting</li>
+			<li>AptitudeRemarkable_Melee</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>AddictionResistant_Alcohol</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_OniR</defName>
+		<label>Red Oni</label>
+		<description>Red Oni are one of the variants of Oni. They generally have red skin, have specialized physical strength and fighting ability, and have a more unstable mental state. \n\nThe vitality of a Red Oni is extremely tenacious. It is said that they cannot be killed without piercing their heads and decapitating them.</description>
+		<descriptionShort>Red Oni are even more rowdy then thier more common bretheren. You better prep some hospital beds, but not for the Red Oni!</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Oni</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Deathless</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>Superclotting</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MoveSpeed_Quick</li>
+			<li>FireResistant</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>MeleeDamage_Strong</li>
+			<li>KillThirst</li>
+			<li>Robust</li>
+			<li>Pain_Reduced</li>
+			<li>Beauty_VeryUgly</li>
+			<li>Ark_Oni</li>
+			<li>Ark_OniHornFloating</li>
+			<li>Ark_OniHornRed</li>
+			<li>Body_Hulk</li>
+			<li>Hair_SnowWhite</li>
+			<li>Ark_InhibitingToxic</li>
+			<li>Ark_Aggressor</li>
+			<li>Skin_DeepRed</li>
+			<li>Skin_PaleRed</li>
+			<li>StrongStomach</li>
+			<li>Nearsighted</li>
+			<li>DarkVision</li>
+			<li>Instability_Major</li>
+			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudeRemarkable_Melee</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>AddictionResistant_Alcohol</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_OniB</defName>
+		<label>Blue Oni</label>
+		<description>Blue Oni are one of the varieties of Oni. They generally have blue skin and are specialized in fine processing and thinking abilities. They are psychically sensitive, pessimistic and require regular intake of psychotropic drugs to maintain a normal metabolism and calm nerves. \n\nBlue Oni often hold the position of craftsman and researcher in Oni groups and rarely appear on the battlefield. </description>
+		<descriptionShort>Blue Oni are great with the more intricate things in life and less so with combat. They need psychite to keep thier mood stable and balance thier metabolism.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Oni</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>WoundHealing_SuperFast</li>
+			<li>Superclotting</li>
+			<li>PsychicAbility_Enhanced</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Mood_Depressive</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Ark_Oni</li>
+			<li>Ark_OniHornFloating</li>
+			<li>Ark_OniHornBlue</li>
+			<li>Body_Thin</li>
+			<li>Hair_SnowWhite</li>
+			<li>Ark_InhibitingToxic</li>
+			<li>Ark_Aggressor</li>
+			<li>Skin_Purple</li>
+			<li>Skin_Blue</li>
+			<li>StrongStomach</li>
+			<li>DarkVision</li>
+			<li>Instability_Major</li>
+			<li>ElongatedFingers</li>
+			<li>AptitudeRemarkable_Crafting</li>
+			<li>AptitudeStrong_Intellectual</li>
+			<li>ChemicalDependency_Psychite</li>
+		</genes>
+	</XenotypeDef>
+</Defs>

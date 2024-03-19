@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchTabDef>
+    <defName>Ark_ResearchTab</defName>
+    <label>Terra Research</label>
+  </ResearchTabDef>
+
+  <ResearchProjectDef>
+    <defName>Ark_Sectator</defName>
+    <label>Sankta Gizmos</label>
+    <description>The crystallization of the creativity of the Sankta who live on the rim.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ark_ResearchTab</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ark_SectatorCombat</defName>
+		<label>Sankta Combat Equipment</label>
+		<description>A series of combat equipment developed by Sankta in order to better utilize the technology of this rimworld. </description>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ark_Sectator</li>
+			<li>Machining</li>
+		</prerequisites>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ark_Oni</defName>
+		<label>Oni Production</label>
+		<description>These are products of the Oni tribe living on this rimworld that combines the skills of their homeland with local characteristics.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ark_OniDrug</defName>
+		<label>Oni Clan Secret Medicine</label>
+		<description>Unlock the ways to craft a series of serums. The secret medicine of the Oni squeezes the life potential of the user in an extreme way to awaken a specific extraordinary power. The side effects caused by it are almost unbearable for ordinary people. Only the Oni can swallow the price by relying on their special physique. Maybe this counts as a kind of racial patent protection? \n\nIn order to fully develop the power of this secret medicine, the Oni tribe formed a professional ninja group around each secret medicine. All their combat methods are based on the secret medicine.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ark_Oni</li>
+			<li>DrugProduction</li>
+		</prerequisites>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.5</researchViewY>
+	</ResearchProjectDef>
+</Defs>

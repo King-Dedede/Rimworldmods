@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HistoryEventDef>
+		<defName>Ark_ChildrenReceive</defName>
+		<label>child refugee transfer</label>
+	</HistoryEventDef>
+
+	<IncidentDef Name="Ark_DiseaseIncident" Abstract="True">
+		<workerClass>IncidentWorker_DiseaseHuman</workerClass>
+		<category>DiseaseHuman</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<diseaseVictimFractionRange>0.2~0.5</diseaseVictimFractionRange>
+		<letterDef>NegativeEvent</letterDef>
+	</IncidentDef>
+
+<!--	<IncidentDef ParentName="Ark_DiseaseIncident">
+		<defName>Ark_Disease_FallenPlague</defName>
+		<label>Fallen Plague</label>
+		<diseaseIncident>Ark_hediff_FallenPlague</diseaseIncident>
+		<diseasePartsToAffect>
+			<li>Brain</li>
+		</diseasePartsToAffect>
+		<letterLabel>Fallen Plague</letterLabel>
+		<letterText>{0}{1} is suffering from {2}.\n\nMake sure there are beds and doctors so they can get proper treatment and stay in bed as much as possible. \n\nThe following {1} are sick:</letterText>
+	</IncidentDef>-->
+</Defs>

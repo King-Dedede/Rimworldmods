@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef ParentName="Ark_GenderBase">
+		<defName>Ark_Male</defName>
+		<label>Male</label>
+		<description>Dominant expression of this gene makes carriers biologically male.</description>
+		<iconPath>UI/Icons/Genes/Ark_Male</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<displayCategory>Ark_Misc</displayCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<forceMale>true</forceMale>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Ark_GenderBase">
+		<defName>Ark_Female</defName>
+		<label>Female</label>
+		<description>Dominant expression of this gene makes the carrier biologically female.</description>
+		<iconPath>UI/Icons/Genes/Ark_Female</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<displayCategory>Ark_Misc</displayCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<forceFemale>true</forceFemale>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_Nature</defName>
+		<label>Son of Nature</label>
+		<description>Carriers of this gene are well adapted to life in the natural environment, at the cost of being very poor at dealing with precision instruments.</description>
+		<iconPath>UI/Icons/Genes/Ark_Nature</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>3</biostatMet>
+		<displayCategory>Ark_Misc</displayCategory>
+		<forcedTraits>
+			<li>
+				<def>Ark_Trait_Nature</def>
+			</li>
+		</forcedTraits>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outspoken</defName>
+		<label>alloy head</label>
+		<description>Carriers of this gene speak very frankly and without scruples, easily making others feel dissatisfied.</description>
+		<iconPath>UI/Icons/Genes/Outspoken</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<displayCategory>Ark_Misc</displayCategory>
+		<forcedTraits>
+			<li>
+				<def>Ark_Outspoken</def>
+			</li>
+		</forcedTraits>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_Aggressor</defName>
+		<label>Provocateur</label>
+		<description>Carriers of this gene are psychologically resistant to avoiding enemy attacks and hiding themselves, and can take pleasure in killing.</description>
+		<iconPath>UI/Icons/Genes/Ark_Aggressor</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<displayCategory>Ark_Misc</displayCategory>
+		<forcedTraits>
+			<li>
+				<def>Ark_Trait_Aggressor</def>
+			</li>
+		</forcedTraits>
+		<exclusionTags>
+			<li>ViolenceDisabled</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_Careless</defName>
+		<label>Nervous</label>
+		<description>Carriers of this gene are naturally outspoken and not good at thinking, but this is not a bad thing.</description>
+		<iconPath>UI/Icons/Genes/Ark_Careless</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>3</biostatMet>
+		<displayCategory>Ark_Misc</displayCategory>
+		<aggroMentalBreakSelectionChanceFactor>4</aggroMentalBreakSelectionChanceFactor>
+		<prisonBreakMTBFactor>0.4</prisonBreakMTBFactor>
+		<forcedTraits>
+			<li>
+				<def>Ark_Trait_Careless</def>
+			</li>
+		</forcedTraits>
+		<exclusionTags>
+			<li>Aggressive</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneToxResistBase">
+		<defName>Ark_InhibitingToxic</defName>
+		<label>Poison-suppressing blood</label>
+		<description>The blood of carriers of this gene contains a large amount of special detoxification proteins that can quickly metabolize most toxins entering the body and prevent harmful chemicals from damaging organs.</description>
+		<iconPath>UI/Icons/Genes/Ark_InhibitingToxic</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<prerequisite>Ark_Oni</prerequisite>
+		<displayCategory>Ark_Misc</displayCategory>
+		<statOffsets>
+			<ToxicResistance>0.75</ToxicResistance>
+		</statOffsets>
+		<hediffGiversCannotGive>
+			<li>ChemicalDamageModerate</li>
+			<li>ChemicalDamageSevere</li>
+			<li>Ark_BloodDrugPoisoning</li>
+		</hediffGiversCannotGive>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_gene_TragedyBirth</defName>
+		<label>Cradle of Suffering</label>
+		<description>This bloodline comes from the land on the other side where misfortune is rampant. Fate brings misfortunes equally. Those who fear will not receive mercy, and those who resist cannot avoid destruction. However, fragile lives can always find a trace of cruel hope under the crushing force of fate. .</description>
+		<iconPath>UI/Icons/Genes/Ark_TragedyBirth</iconPath>
+		<biostatCpx>7</biostatCpx>
+		<biostatMet>7</biostatMet>
+		<biostatArc>2</biostatArc>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Ark_Misc</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<statOffsets>
+			<PainShockThreshold>-0.2</PainShockThreshold>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		</statOffsets>
+		<exclusionTags>
+			<li>Pain</li>
+		</exclusionTags>
+	</GeneDef>
+
+<!--<GeneDef>
+		<defName>Ark_gene_Stranger</defName>
+		<label>Stranger</label>
+		<description>This bloodline comes from a distant land on the other side. The distance between the world on this side is far longer than the distance between stars. For those who have arrived on the other side, their hometown is already elusive.</description>
+		<iconPath>UI/Icons/Genes/Ark_Stranger</iconPath>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Ark_Misc</displayCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<ThoughtDef>
+		<defName>Ark_StrangerMood</defName>
+		<workerClass>ThoughtWorker_AlwaysActive</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<requiredGenes>
+			<li>Ark_gene_Stranger</li>
+		</requiredGenes>
+		<stages>
+			<li>
+				<label>Stranger</label>
+				<description>Can this earth hold my soul? Where is my hometown?</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>-->
+</Defs>
