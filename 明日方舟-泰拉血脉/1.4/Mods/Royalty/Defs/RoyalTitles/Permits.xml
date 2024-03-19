@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RoyalTitlePermitDef>
+    <defName>TradeAngel</defName>
+    <label>The New Laterano Trading Center welcomes you!</label>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef Name="Ark_DropResourcesBase" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <faction>NewLaterano</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>PackJumpDrop</defName>
+		<label>Jump Pack Drop</label>
+		<description>A jump pack can get you away from threats quickly. \n\nNew Laterano has limited manpower and cannot take care of all the suffering on the earth, but we can give every caller a rope to save themselves.</description>
+		<minTitle>Believer</minTitle>
+		<uiPosition>(0,0)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<Apparel_PackJump>1</Apparel_PackJump>
+			</itemsToDrop>
+			<favorCost>4</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>PackageDrop</defName>
+		<label>Deluxe Meal Package Drop</label>
+		<description>The luxurious set meal for two people comes with a dining table, which is purely handmade. It is the best choice for a simple and elegant meal and will bring you a good mood for the day. \n\nWhy do you want to put a table in there? Because last time some users reported that eating on the ground was not elegant at all.</description>
+		<minTitle>Friar</minTitle>
+		<uiPosition>(0,1)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<PsychiteTea>2</PsychiteTea>
+				<MealLavish>2</MealLavish>
+				<Table1x2c>1</Table1x2c>
+			</itemsToDrop>
+			<favorCost>3</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>FirstAidDrop</defName>
+		<label>First Aid Drop</label>
+		<description>A first aid kit, which consists of 5 bottles of go juice and 5 glitterworld medicine, for those emergency situations.</description>
+		<minTitle>Friar</minTitle>
+		<uiPosition>(0,2)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<GoJuice>5</GoJuice>
+				<MedicineUltratech>5</MedicineUltratech>
+			</itemsToDrop>
+			<favorCost>6</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>ResurrectorDrop</defName>
+		<label>Resurrector Serum Drop</label>
+		<description>After all, there are limits to modern first aid and medical treatment. The more we try to avoid death, the easier it is for it to catch up with us, so let’s go for it! We've got a second life ready for you! \n\nIt is best to arrange for someone to keep the resurrection fluid in advance. After all, it does not have an automatic injection function.</description>
+		<minTitle>GuardKnight</minTitle>
+		<uiPosition>(1,2)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<MechSerumResurrector>1</MechSerumResurrector>
+			</itemsToDrop>
+			<favorCost>12</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef>
+		<defName>CannonryCall</defName>
+		<label>Orbital Support Drop</label>
+		<description>Call the nearest stronghold to bombard the marked location, which is the most frequently used permission by Laterano executors. \n\nExperience from a veteran employee of the notary office: If you have enough points, you can try a big one.</description>
+		<workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+		<minTitle>Friar</minTitle>
+		<faction>NewLaterano</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>10</cooldownDays>
+		<uiPosition>(0,3)</uiPosition>
+		<royalAid>
+			<favorCost>1</favorCost>
+			<targetingRange>44.9</targetingRange>
+			<radius>2.9</radius>
+			<explosionRadiusRange>7.9</explosionRadiusRange>
+			<explosionCount>1</explosionCount>
+			<intervalTicks>60</intervalTicks>
+			<warmupTicks>120</warmupTicks>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef>
+		<defName>PerformerCall</defName>
+		<label>Executor Support</label>
+		<description>Call the notary office for military assistance, and the notary office will select three executors and deliver them to you. \n\nThe Executor's abilities are limited. For tasks such as destroying mechanical clusters and fighting against imperial regiments, it is recommended to go to the Pope's Hall.</description>
+		<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+		<minTitle>GuardKnight</minTitle>
+		<faction>NewLaterano</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,4)</uiPosition>
+		<royalAid>
+			<favorCost>8</favorCost>
+			<pawnKindDef>Ark_Performer</pawnKindDef>
+			<pawnCount>3</pawnCount>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+		<cooldownDays>30</cooldownDays>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef>
+		<defName>GunKnightCall</defName>
+		<label>Legal Sanctions</label>
+		<description>The bishop is an extension of the law, and it is the duty of the cavalry to defend the law. When you are in danger, please feel free to ask for help from us. After all, the Pope and the cardinals are extremely safe, and the gun cavalry will always have something to do.</description>
+		<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+		<minTitle>Bishop</minTitle>
+		<faction>NewLaterano</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(1,4)</uiPosition>
+		<royalAid>
+			<favorCost>12</favorCost>
+			<pawnKindDef>Ark_GunKnight</pawnKindDef>
+			<pawnCount>8</pawnCount>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+		<cooldownDays>30</cooldownDays>
+	</RoyalTitlePermitDef>
+	
+	<RoyalTitlePermitDef>
+		<defName>TransportCall</defName>
+		<label>Call Transport Shuttle</label>
+		<description>Call a transport shuttle that is temporarily at your disposal. Don't worry if there is an Empire logo on the fuselage. Just remind the driver to repaint the transport plane when you leave. \n\nWhat? Another enforcer was shot down while traveling on a transport shuttle? I just said that the engineering department’s idea of ​​dismantling and reinstalling was not reliable!</description>
+		<workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+		<minTitle>GuardKnight</minTitle>
+		<faction>NewLaterano</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>15</cooldownDays>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<uiPosition>(0,5)</uiPosition>
+		<royalAid>
+			<favorCost>6</favorCost>
+			<targetingRange>44.9</targetingRange>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>AntigrainDrop</defName>
+		<label>Antigrain Shell Drop</label>
+		<description>Using a drop pod to transport antigrain warheads is an absolutely crazy idea, but you can always trust New Laterano's logistics, we have the gentlest sorting staff and the safest storage facilities. \n\nIt is prohibited to hit the transport pod with stones, muskets or other objects.</description>
+		<minTitle>GuardKnight</minTitle>
+		<uiPosition>(1,3)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+			</itemsToDrop>
+			<favorCost>8</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>PsylinkDrop</defName>
+		<label>Psylink Drop</label>
+		<description>New Laterano has never given up on the exploration of "psionic power", a technique that is completely different from the Originium technique, and the empire that is hostile to Sankta for unknown reasons is a good research object. Don't worry, there are no innocents in the research process.\n\nA carefully packaged psychic device, given to the very special you :).</description>
+		<minTitle>Bishop</minTitle>
+		<uiPosition>(0,6)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<PsychicAmplifier>1</PsychicAmplifier>
+			</itemsToDrop>
+			<favorCost>12</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+</Defs>

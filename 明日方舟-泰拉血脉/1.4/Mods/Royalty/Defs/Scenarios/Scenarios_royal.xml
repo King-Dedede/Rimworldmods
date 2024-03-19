@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ScenarioDef>
+    <defName>Ark_SoloApostle</defName>
+    <label>Lone Apostle</label>
+    <description>You thought this was just an easy assignment, but when the explosion sounded outside the transport shuttle, and the debris and sparks spun in front of your eyes with the whole world spinning, you began to miss the endless stowaways in the sewers of New Laterano.</description>
+    <scenario>
+      <summary>As an experienced notary enforcer, must survive in this malicious world.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+		  <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+			  <def>ConfigurePawnsXenotypes</def>
+			  <pawnChoiceCount>8</pawnChoiceCount>
+			  <xenotypeCounts>
+				  <li>
+					  <requiredAtStart>True</requiredAtStart>
+					  <xenotype>Ark_xeno_Sectator</xenotype>
+					  <allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+				  </li>
+			  </xenotypeCounts>
+		  </li>
+		  <li Class="ScenPart_PlayerPawnsArriveMethod">
+			  <def>PlayerPawnsArriveMethod</def>
+			  <method>DropPods</method>
+		  </li>
+		  <li Class="ScenPart_GameStartDialog">
+			  <def>GameStartDialog</def>
+			  <text>You thought this was just an easy assignment, but when the explosion sounded outside the transport shuttle, and the debris and sparks spun in front of your eyes with the whole world spinning, you began to miss the endless stowaways in the sewers of New Laterano.</text>
+			  <closeSound>GameStartSting</closeSound>
+		  </li>
+		  <li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>MealSurvivalPack</thingDef>
+			  <count>30</count>
+		  </li>
+		  <li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>MedicineIndustrial</thingDef>
+			  <count>20</count>
+		  </li>
+		  <li Class="ScenPart_StartingResearch">
+			  <def>StartingResearch</def>
+			  <project>Machining</project>
+		  </li>
+		  <li Class="ScenPart_CreateIncident">
+			  <def>CreateIncident</def>
+			  <incident>ShipChunkDrop</incident>
+			  <intervalDays>1</intervalDays>
+		  </li>
+		  <li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>Ark_AssaultRifle</thingDef>
+		  </li>
+		  <li Class="ScenPart_CreateIncident">
+			  <def>CreateIncident</def>
+			  <incident>RaidEnemy</incident>
+			  <intervalDays>6</intervalDays>
+			  <repeat>True</repeat>
+		  </li>
+		  <li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>Apparel_FlakJacket</thingDef>
+			  <quality>Excellent</quality>
+		  </li>
+		  <li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>Apparel_FlakVest</thingDef>
+			  <quality>Excellent</quality>
+		  </li>
+		  <li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>Apparel_FlakPants</thingDef>
+			  <quality>Excellent</quality>
+		  </li>
+		  <li Class="ScenPart_ScatterThingsNearPlayerStart">
+			  <def>ScatterThingsNearPlayerStart</def>
+			  <thingDef>ShuttleCrashed</thingDef>
+			  <allowRoofed>True</allowRoofed>
+		  </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

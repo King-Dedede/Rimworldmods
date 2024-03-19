@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Wastepack"]/statBases/MarketValue</xpath>
+		<value>
+				<MarketValue>0.01</MarketValue>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "Wastepack"]/statBases</xpath>
+					<value>
+						<RoyalFavorValue>0.05</RoyalFavorValue>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "Genepack"]/statBases</xpath>
+					<value>
+						<RoyalFavorValue>1</RoyalFavorValue>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

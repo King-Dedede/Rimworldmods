@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RoyalTitleDef Abstract="True" Name="BeliefTitleBase">
+		<tags>
+			<li>BeliefTitle</li>
+		</tags>
+		<awardThought>GainedTitle</awardThought>
+		<lostThought>LostTitle</lostThought>
+		<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+		<maxPsylinkLevel>0</maxPsylinkLevel>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="BeliefTitleBase">
+		<defName>Believer</defName>
+		<label>Believer</label>
+		<description>Being a believer means that you have received Lateran approval and that the Law has embraced you, even if you do not understand its existence. \n\nAll the official residents of New Laterano are believers. Becoming a believer does not require you to be very devout to Lateranism, nor does it mean that the identity of a non believer is equivalent to 20 bags of toxic waste. When you go to Lateran, you are a follower of Lateran.</description>
+		<seniority>100</seniority>
+		<favorCost>1</favorCost>
+		<canBeInherited>false</canBeInherited>
+		<permitPointsAwarded>1</permitPointsAwarded>
+		<changeHeirQuestPoints>1000</changeHeirQuestPoints>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="BeliefTitleBase">
+		<defName>Friar</defName>
+		<label>Monk</label>
+		<description>Becoming a Monk is not an easy task. You may have completed a lot of troublesome work or left a deep impression on the envoys of the Pure World Monk Society. In short, welcome to becoming a cog of the church. The New Laterano trade center is now open to you as well. Don’t forget to enjoy life after work.</description>
+		<seniority>200</seniority>
+		<favorCost>14</favorCost>
+		<commonality>1</commonality>
+		<canBeInherited>false</canBeInherited>
+		<permitPointsAwarded>2</permitPointsAwarded>
+		<permits>
+			<li>TradeAngel</li>
+		</permits>
+		<changeHeirQuestPoints>1000</changeHeirQuestPoints>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="BeliefTitleBase">
+		<defName>GuardKnight</defName>
+		<label>Patriarchal Knight</label>
+		<description>A Patriarchal Knight does not necessarily have to serve as a Papal Gunslinger, but the Pope's Gunslinger will definitely be named a Guardian Knight. The Gunslinger has made an indelible contribution to the peaceful and stable life of New Laterano. After becoming a Patriarchal Knight, you will have the authority to mobilize the armed forces of the church. Some of the "self-defense" measures of past eras will also be available to you, but please use them sparingly as the church is not the only way of obtaining them. It's not easy for us to take these items from ruins intact.</description>
+		<seniority>300</seniority>
+		<favorCost>21</favorCost>
+		<commonality>0.5</commonality>
+		<canBeInherited>true</canBeInherited>
+		<permitPointsAwarded>3</permitPointsAwarded>
+		<permits>
+			<li>TradeAngel</li>
+		</permits>
+		<changeHeirQuestPoints>3000</changeHeirQuestPoints>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="BeliefTitleBase">
+		<defName>Bishop</defName>
+		<label>Bishop</label>
+		<description>Hello, fellow newly appointed bishops, are you ready for your inaugural speech and celestial water cannon session? Ah, the above is just a joke. There are no more benefits to a bishop than a knight. There is only endless work to be done. However, if you are interested, you can look through the hidden files of the church. With your authority, you might find something. It’s not suitable to put it in the public eye though...</description>
+		<seniority>400</seniority>
+		<favorCost>28</favorCost>
+		<commonality>0.25</commonality>
+		<canBeInherited>true</canBeInherited>
+		<permitPointsAwarded>3</permitPointsAwarded>
+		<permits>
+			<li>TradeAngel</li>
+		</permits>
+		<changeHeirQuestPoints>3000</changeHeirQuestPoints>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="BeliefTitleBase">
+		<defName>Cardinal</defName>
+		<label>Cardinal</label>
+		<description>Cardinals are a group of social beasts who work overtime in the Papal Hall every day. Their duty is to reject the Pope's ill-intentioned ideas and to kill the thugs with ill-intentioned ideas when they rush into the Papal Hall and the cavalrymen are not around. If If there is an opportunity for a business trip, they will fight for the oppurtunity and then let the rest be responsible for the repair or reconstruction of the Pope's Hall.</description>
+		<seniority>500</seniority>
+		<commonality>0.1</commonality>
+		<recruitmentResistanceOffset>150</recruitmentResistanceOffset>
+		<replaceOnRecruited>Bishop</replaceOnRecruited>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="BeliefTitleBase">
+		<defName>Saint</defName>
+		<label>Saint</label>
+		<description>In all the classics related to Lateran history, there are records of the first generation of saints building stone towers and establishing the holy city. In addition to the first group of sages who established the city-state, each pope will be awarded the title of saint during his tenure. This is not only an honor, but also means that he needs to lead all Sankta and guide the entirety of Laterano. \n\nNew Laterano has gone too far, and we can no longer see the holy city. ——Error! The record cannot be read!</description>
+		<seniority>600</seniority>
+		<commonality>0</commonality>
+		<recruitmentResistanceOffset>200</recruitmentResistanceOffset>
+		<replaceOnRecruited>Bishop</replaceOnRecruited>
+	</RoyalTitleDef>
+</Defs>
