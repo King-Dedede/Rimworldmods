@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef ParentName="MercenaryGunnerBase">
+		<defName>Ark_GrayRat_GunnerTox</defName>
+		<label>Rat Gunner</label>
+		<defaultFactionType>Ark_GrayRatPriate</defaultFactionType>
+		<initialResistanceRange>6~10</initialResistanceRange>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>BeltDefenseTox</li>
+		</apparelTags>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Wastepack</thingDef>
+					<countRange>1~5</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MercenarySlasherBase">
+		<defName>Ark_GrayRat_SlasherTox</defName>
+		<label>Rat Slasher</label>
+		<defaultFactionType>Ark_GrayRatPriate</defaultFactionType>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<apparelRequired Inherit="False">
+			<li>Apparel_PackTox</li>
+		</apparelRequired>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Wastepack</thingDef>
+					<countRange>1~5</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~14</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MercenaryEliteBase">
+		<defName>Ark_GrayRat_EliteTox</defName>
+		<label>Elite Rat Mercenary</label>
+		<defaultFactionType>Ark_GrayRatPriate</defaultFactionType>
+		<initialResistanceRange>15~23</initialResistanceRange>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			<li>BeltDefenseTox</li>
+		</apparelTags>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Wastepack</thingDef>
+					<countRange>1~5</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~14</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="GrenadierBase">
+		<defName>Ark_GrayRat_SpreaderTox</defName>
+		<label>Rat Polluter</label>
+		<defaultFactionType>Ark_GrayRatPriate</defaultFactionType>
+		<combatPower>110</combatPower>
+		<initialResistanceRange>99~99</initialResistanceRange>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<weaponMoney>1200~1200</weaponMoney>
+		<weaponTags>
+			<li>GunHeavy</li>
+			<li>GunSingleUse</li>
+		</weaponTags>
+		<techHediffsRequired>
+			<li>Ark_DeathExploder</li>
+			<li>BionicLeg</li>
+			<li>BionicLeg</li>
+		</techHediffsRequired>
+		<inventoryOptions Inherit="False">
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Ark_LeakedWastepack</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MercenaryEliteTierBase">
+		<defName>Ark_GrayRat_PureSaint</defName>
+		<label>Zalak Saint</label>
+		<defaultFactionType>Ark_GrayRatPriate</defaultFactionType>
+		<factionLeader>true</factionLeader>
+		<initialResistanceRange>30~40</initialResistanceRange>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+		</apparelTags>
+		<techHediffsRequired>
+			<li>Z_RatSaint</li>
+		</techHediffsRequired>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Ark_xeno_SublimeRat>1</Ark_xeno_SublimeRat>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!--Zalak characteristics hediff-->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Ark_Implant_DeathExploder</defName>
+		<label>explosive gland</label>
+		<labelNoun>explosive glands</labelNoun>
+		<description>An implanted and activated explosive bionic gland.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_DeathExploder</ThingDef>
+			<RecipeDef>Ark_RemoveDeathExploder</RecipeDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>Ark_DeathExploder</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Ark_GSWT.HCP_Exploder">
+				<Radius>4.9</Radius>
+				<damage>Bomb</damage>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBase">
+		<defName>Ark_DeathExploder</defName>
+		<label>explosive glands</label>
+		<description>Explosive glands are bionic glands implanted in the spine that suppress the wearer's sense of pain and detonate upon death. \n\nDue to their cruel use, explosive glands are banned from production and use everywhere, but some finished products are still occasionally sold on the market. Some people say that the real reason why explosive glands are banned is to greatly reduce the risk of assassinations.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_Implant_DeathExploder</HediffDef>
+			<RecipeDef>Ark_InstallDeathExploder</RecipeDef>
+		</descriptionHyperlinks>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(100,0,0)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>800</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>Bionic</li>
+		</tradeTags>
+		<thingCategories>
+			<li>BodyPartsBionic</li>
+		</thingCategories>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>Ark_InstallDeathExploder</defName>
+		<label>Implantation of explosive glands</label>
+		<description>Explosive glands are surgically implanted.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_DeathExploder</ThingDef>
+			<HediffDef>Ark_Implant_DeathExploder</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Explosive glands are being implanted.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_DeathExploder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ark_DeathExploder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Ark_Implant_DeathExploder</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>Ark_RemoveDeathExploder</defName>
+		<label>Remove explosive glands</label>
+		<description>Explosive glands are surgically removed.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_DeathExploder</ThingDef>
+			<HediffDef>Ark_Implant_DeathExploder</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Explosive glands are being removed.</jobString>
+		<removesHediff>Ark_Implant_DeathExploder</removesHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="Ark_GeneHediffBase">
+		<defName>Ark_Giver_RatSaint</defName>
+		<label>mind cluster</label>
+		<description>Pure Zalaks can use powerful psychic abilities to connect themselves with the minds of their companions as a whole. Only killing or capturing them can break this state.</description>
+		<defaultLabelColor>(0,0.75,0.75)</defaultLabelColor>
+		<comps>
+			<li Class="Ark_GSWT.HCP_RemoveWhenPlayer"/>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_GiveHediffsInRange">
+				<range>9.9</range>
+				<mote>Ark_Mote_GiverGloryB</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+				</targetingParameters>
+				<hediff>Ark_Hediff_RatCraze</hediff>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_GeneHediffBase">
+		<defName>Ark_Hediff_RatCraze</defName>
+		<label>Rat Pack Fever</label>
+		<description>The psychic power of a Pure Zalak is constantly stimulating this individual's brain, enhancing the will to fight and forming a group fighting frenzy.</description>
+		<defaultLabelColor>(0.75,0,0)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<AimingDelayFactor>-0.4</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+				<maxDistance>10</maxDistance>
+				<customMote>Ark_Mote_GiverLinkB</customMote>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<ThingDef ParentName="BodyPartBase">
+		<defName>Z_RatSaint</defName>
+		<label>pure saint</label>
+		<description>The pure saint.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(250,250,250)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+		</statBases>
+	  <generateAllowChance>0</generateAllowChance>
+	  <destroyOnDrop>true</destroyOnDrop>
+	  <tradeability>None</tradeability>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>EJ_RatSaint</defName>
+		<label>do</label>
+		<description>do.</description>
+		<addsHediff>Ark_Giver_RatSaint</addsHediff>
+		<jobString>do.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Z_RatSaint</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Z_RatSaint</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+</Defs>

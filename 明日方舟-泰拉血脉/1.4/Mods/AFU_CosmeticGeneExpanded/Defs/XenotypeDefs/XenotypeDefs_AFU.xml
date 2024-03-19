@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeDef>
+		<defName>Ark_xeno_Feline</defName>
+		<label>Feline</label>
+		<description>Felines are a widespread cat-like race, with naturally strong hands and a delicate appearance. The specialization of their nervous tissue makes them tired easily but they are extremely tolerant to psychotropic drugs. \n\nIt is said that some feline tribes have established a rather peculiar form of slavery. The enslaved people will not lose their personal freedom and will not be passive at work, and will also have strong pleasure due to being driven by the felines.</description>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Feline</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>NakedSpeed</li>
+			<li>Aggression_Aggressive</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Sleepy</li>
+			<li>Beauty_Beautiful</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>AFU_HA_CatEar</li>
+			<li>AFU_HA_LoverlyCatEar</li>
+			<li>Ark_gene_TragedyBirth</li>
+			<li>AFU_BA_CatTail</li>
+			<li>DarkVision</li>
+			<li>ElongatedFingers</li>
+			<li>Unstoppable</li>
+			<li>AddictionImmune_Psychite</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_Cautus</defName>
+		<label>Cautus</label>
+		<description>The Cautus are a race of people with rabbit-like characteristics. Their physical fitness is not outstanding, but they have sustained a considerable population with their strong reproductive capacity and easily filled stomachs. They have innate talents in mining and planting. \n\nThe Wandering Terra Union jointly established by the Cautus and Zalak currently controls about 50% of the food production on the entire planet. This situation has indirectly affected the overall strength of pirates, because some pirates have discovered that trading with the Wandering Terran Union yields far more than raiding.</description>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Cautus</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>MoveSpeed_Quick</li>
+			<li>Delicate</li>
+			<li>Libido_High</li>
+			<li>Fertile</li>
+			<li>AFU_HA_RabbitEar</li>
+			<li>AFU_HA_LoverlyRabbitEar</li>
+			<li>Ark_gene_TragedyBirth</li>
+			<li>AFU_BA_RabbitTail</li>
+			<li>AFU_BA_LovelyRabbitTail</li>
+			<li>RobustDigestion</li>
+			<li>AptitudeStrong_Mining</li>
+			<li>AptitudeRemarkable_Plants</li>
+			<li>AddictionResistant_Smokeleaf</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_Vulpo</defName>
+		<label>Vulpo</label>
+		<description>Vulpos are a race with fox-like characteristics, with high psychic sensitivity. They are better at using their looks and subtle wording to build good relationships with people than fighting. \n\nMore and more factions began to choose Vulpos as caravan representatives. Who can resist a beautiful or cute salesman wagging a big fluffy tail?</description>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Vulpo</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>PsychicAbility_Extreme</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Delicate</li>
+			<li>Beauty_Pretty</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>AFU_HA_FoxEar</li>
+			<li>AFU_HA_ShortHairFoxEar</li>
+			<li>Ark_gene_TragedyBirth</li>
+			<li>AFU_BA_FoxTail</li>
+			<li>AFU_BA_FluffyFoxTail</li>
+			<li>AptitudeRemarkable_Social</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_Zalak</defName>
+		<label>Zalak</label>
+		<description>Zalaks are a race of people with rat-like characteristics. They are on the thinner side and a bit quick to anger. They have established countless prosperous colonies in the world by relying on their excellent learning ability and dexterous hands. \n\nZalak can take root in almost most harsh environments. Even inaccessible tropical rainforests can be transformed into a Zalak's paradise. It is said that some people have witnessed Zalak in the wasteland engulfed by pollution. figure.</description>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Zalak</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Immunity_SuperStrong</li>
+			<li>Mood_Optimist</li>
+			<li>Aggression_Aggressive</li>
+			<li>Fertile</li>
+			<li>Body_Thin</li>
+			<li>AFU_HA_RatEar</li>
+			<li>Ark_gene_TragedyBirth</li>
+			<li>AFU_BA_RatTail</li>
+			<li>StrongStomach</li>
+			<li>Learning_Fast</li>
+			<li>DarkVision</li>
+			<li>ElongatedFingers</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_PolluteRat</defName>
+		<label>Waste Zalak</label>
+		<description>The Waste Zalaks are a Zalak variant formed from long-term exposure to pollution. Similar to Wasters, pollution has dyed thier skin grey. Odd horns also growon thier heads, certainly a side affect of the wastes. They are immune to toxins, but irritable and pessimistic. They also need a constant intake of psychotropic drugs. In addition, the Waste Zalak have also mutated various dangerous biological characteristics, including spitting acid. The groups of marauders they form are constantly threatening the peaceful lives of the residents of this rimworld.</description>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_PolluteRat</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>AcidSpray</li>
+			<li>Immunity_SuperStrong</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>Mood_Pessimist</li>
+			<li>ToxResist_Total</li>
+			<li>FireWeakness</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Pain_Reduced</li>
+			<li>Fertile</li>
+			<li>Beauty_VeryUgly</li>
+			<li>AFU_HA_RatEar</li>
+			<li>AFU_HA_SpikedHorn</li>
+			<li>Skin_SlateGray</li>
+			<li>AFU_BA_RatTail</li>
+			<li>StrongStomach</li>
+			<li>DarkVision</li>
+			<li>Instability_Major</li>
+			<li>ElongatedFingers</li>
+			<li>PollutionRush</li>
+			<li>ChemicalDependency_Psychite</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_SublimeRat</defName>
+		<label>Pure Zalak</label>
+		<description>Pure Zalaks are sterile Zalak variant with a very low probability of being born from Waste Zalaks. They are strangely always female. The hair and skin of Pure Zalaks contain almost no pigment, and their physiques are weaker than Waste Zalaks. However, they are much more level headed than thier polluted bretheren, and are born with powerful psychic powers. \n\nWaste Zalaks clans calls these individuals "pure ones", believing that they are beings who have shed all impurities to obtain a perfect body, and are destined to lead the tribe to prosperity. While Pure Zalaks are not good at fighting, they can often serve as leaders or commanders of Waste Zalaks.</description>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_SublimeRat</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>WoundHealing_Slow</li>
+			<li>PsychicAbility_Extreme</li>
+			<li>PsychicBonding</li>
+			<li>MoveSpeed_Slow</li>
+			<li>UVSensitivity_Mild</li>
+			<li>Aggression_DeadCalm</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Sterile</li>
+			<li>Beauty_Pretty</li>
+			<li>Ark_Female</li>
+			<li>Body_Thin</li>
+			<li>AFU_HA_RatEar</li>
+			<li>Hair_SnowWhite</li>
+			<li>Skin_SheerWhite</li>
+			<li>AFU_BA_RatTail</li>
+			<li>StrongStomach</li>
+			<li>Learning_Fast</li>
+			<li>DarkVision</li>
+			<li>ElongatedFingers</li>
+			<li>ChemicalDependency_Psychite</li>
+		</genes>
+	</XenotypeDef>
+</Defs>
